@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <script src="/js/script.js"></script>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,25 +27,9 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
     />
     <!-- https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80 -->
-    <title>Pizza Pronta</title>
+    <title>Pizzaria</title>
   </head>
 
-  <script>
-    scrollAnim = () => {
-      const reveals = document.querySelectorAll(".reveal, .reveal-sobre");
-
-      let windowHt = window.innerHeight;
-
-      reveals.forEach((element) => {
-        let elementPos = element.getBoundingClientRect().top;
-        if (elementPos <= windowHt) {
-          element.classList.add("active");
-        }
-      });
-    };
-
-    window.addEventListener("scroll", scrollAnim);
-  </script>
   <body>
     <div class="container-fluid">
       <div class="row" id="home">
@@ -53,7 +38,7 @@
             <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
             <div class="container-fluid">
               <a style="color: #ffe2b4" class="navbar-brand" href="#"
-                ><b>Pizza</b></a
+                ><b>Pizza do Paulo</b></a
               >
               <button
                 class="navbar-toggler"
@@ -77,7 +62,7 @@
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#sobre">Sobre</a>
+                    <a class="nav-link" href="#sobre">Depoimentos</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#contato">Contato</a>
@@ -193,19 +178,22 @@
           </h3>
           <div class="depoimentos my-5">
             <div class="depoimento">
-              <div class="avatar"></div>
+              <div class=""></div>
+              <img src="/images/1.jpg" class="avatar" alt="Avatar do Depoimento">
               <p class="font-a">
                 As pizzas da Pizza Pronta são simplesmente divinas! Cada sabor é uma obra-prima culinária que me faz querer voltar sempre. Recomendo a todos os amantes de pizza!
               </p>
             </div>
             <div class="depoimento">
-              <div class="avatar"></div>
+                <div class=""></div>
+                <img src="/images/2.png" class="avatar" alt="Avatar do Depoimento">
               <p class="font-a">
                 Sou cliente fiel da Pizza Pronta há anos. A qualidade dos ingredientes, a massa perfeitamente assada e os sabores autênticos fazem dela a melhor pizzaria da região!
               </p>
             </div>
             <div class="depoimento">
-              <div class="avatar"></div>
+                <div class=""></div>
+                <img src="/images/3.jpg" class="avatar" alt="Avatar do Depoimento">
               <p class="font-a">
                 Quando penso em pizza, penso na Pizza Pronta. A combinação única de sabores e a dedicação da equipe resultam em uma experiência gastronômica incrível a cada visita.
               </p>
