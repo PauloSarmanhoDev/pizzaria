@@ -1,0 +1,150 @@
+html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #1d1c1c !important;
+  }
+  .reveal {
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal-sobre {
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .active {
+    transform: translate(0);
+    opacity: 1;
+  }
+  
+  .m {
+    margin-top: 100px;
+  }
+  .depoimentos {
+    margin-top: 20px;
+    padding: 0 50px;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .depoimento {
+    text-align: center;
+    margin: 20px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+  }
+  
+  .avatar {
+    margin: 10px auto;
+    background-color: #1d1c1c;
+    height: 130px;
+    /* width: 130px; */
+    display: flex;
+    width: 140px;
+    align-self: center;
+    border-radius: 3000px;
+  }
+  
+  .carrousel-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #272020;
+    height: 137px;
+    border: 1px solid black;
+    color: var(--text-primary);
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  .bg-2 {
+    background-color: #272020;
+  }
+  
+  :root {
+    --text-primary: #ffe2b4;
+    --bg-hd: #7b1717;
+  }
+  nav .navbar-nav li a {
+    font-size: 1.3rem;
+    color: #ffe2b4;
+    font-family: "Itim", "cursive", "serif";
+  }
+  
+  .link {
+    color: #ffe2b4;
+  }
+  .font-a {
+    font-family: "Lato", sans-serif;
+  }
+  
+  .font-b {
+    font-family: "Itim", "cursive", "serif";
+  }
+  
+  .nav-link {
+    color: #ffe2b4 !important;
+  }
+  
+  .bg-hd {
+    background-color: var(--bg-hd);
+  }
+  .ornament,
+  .ornament-box {
+    height: 3px;
+  
+    background-color: rgb(172, 36, 36);
+  }
+  .ornament-box {
+    height: 3px;
+    width: 18%;
+    margin-right: 50px;
+  }
+  
+  .main-nav {
+    display: flex;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    flex-direction: column;
+    color: red;
+    text-align: center;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: url("https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  }
+  .main-nav > h1 {
+    color: var(--text-primary);
+    margin: 0 40px;
+    font-size: 4rem;
+    font-family: "Itim", "cursive", "serif";
+  }
+  
+  @media (max-width: 720px) {
+    .cards-row {
+      height: 700px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .card-body {
+    }
+    .depoimentos {
+      flex-direction: column;
+    }
+    .avatar {
+      width: 140px;
+    }
+  }
+  

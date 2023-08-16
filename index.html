@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+    <!-- https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80 -->
+    <title>Pizza Pronta</title>
+  </head>
+
+  <script>
+    scrollAnim = () => {
+      const reveals = document.querySelectorAll(".reveal, .reveal-sobre");
+
+      let windowHt = window.innerHeight;
+
+      reveals.forEach((element) => {
+        let elementPos = element.getBoundingClientRect().top;
+        if (elementPos <= windowHt) {
+          element.classList.add("active");
+        }
+      });
+    };
+
+    window.addEventListener("scroll", scrollAnim);
+  </script>
+  <body>
+    <div class="container-fluid">
+      <div class="row" id="home">
+        <div class="col-md">
+          <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-hd">
+            <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
+            <div class="container-fluid">
+              <a style="color: #ffe2b4" class="navbar-brand" href="#"
+                ><b>Pizza</b></a
+              >
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="collapse navbar-collapse ml-5 d-lg-flex justify-content-end"
+                id="navbarNav"
+              >
+                <ul class="navbar-nav link">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#sobre">Sobre</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contato</a>
+                  </li>            
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="main-nav">
+            <h1>A melhor Pizza da região!</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-between">
+        <div class="col-md-5 col-sm-12">
+            <h3 style="font-size: 2.5rem" class="link font-b my-5 mx-5">
+              Descubra os Sabores Incríveis
+            </h3>
+            <p style="font-size: 1.3rem" class="link font-a mx-5">
+              Nossas pizzas são cuidadosamente preparadas com ingredientes frescos e selecionados, combinando tradição e inovação para oferecer uma experiência gastronômica única. Cada pedaço é uma explosão de sabores que conquistam paladares exigentes.
+            </p>
+            <div class="ornament my-5 mx-5"></div>
+            <p style="font-size: 1.3rem" class="link font-a mx-5">
+              Além das deliciosas pizzas, oferecemos acompanhamentos irresistíveis, como entradas saborosas e sobremesas que vão encantar os amantes da boa comida. Venha desfrutar de uma experiência gastronômica incomparável.
+            </p>
+          </div>
+        <div class="col-md-4 col-lg-4 col-sm-10 col-10 my-5 mx-5">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="/images/pizza_one.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/images/pizza_pão.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/images/fatia_pizza.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="carrousel-box">
+            Mais pedidas
+            <div class="ornament-box mb-5"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-around">
+        <div id="sobre" class="reveal col-md-12 col-12 my-5 m bg-2 link">
+          <h3 style="font-size: 1.8rem" class="link text-center my-5 font-b">
+            Veja Alguns depoimentos sobre a nossa Pizza!
+          </h3>
+          <div class="depoimentos my-5">
+            <div class="depoimento">
+              <div class="avatar"></div>
+              <p class="font-a">
+                As pizzas da Pizza Pronta são simplesmente divinas! Cada sabor é uma obra-prima culinária que me faz querer voltar sempre. Recomendo a todos os amantes de pizza!
+              </p>
+            </div>
+            <div class="depoimento">
+              <div class="avatar"></div>
+              <p class="font-a">
+                Sou cliente fiel da Pizza Pronta há anos. A qualidade dos ingredientes, a massa perfeitamente assada e os sabores autênticos fazem dela a melhor pizzaria da região!
+              </p>
+            </div>
+            <div class="depoimento">
+              <div class="avatar"></div>
+              <p class="font-a">
+                Quando penso em pizza, penso na Pizza Pronta. A combinação única de sabores e a dedicação da equipe resultam em uma experiência gastronômica incrível a cada visita.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal-sobre row my-5 justify-content-around">
+        <div class="col-md-12 col-12 col-sm-12 text-center my-5">
+          <div class="cards d-flex justify-content-around cards-row">
+            <div
+              class="card mx-3"
+              style="width: 18rem; border: 1px solid black"
+            >
+              <div class="card-body bg-2">
+                <p class="link">Título</p>
+                <i class="link my-2" data-feather="thumbs-up"></i>
+                <p class="link">
+                    Texto
+                </p>
+              </div>
+            </div>
+            <div
+              class="card mx-3"
+              style="width: 18rem; border: 1px solid black"
+            >
+              <div class="card-body bg-2">
+                <p class="link">Título</p>
+                <i class="link my-2" data-feather="shopping-cart"></i>
+                <p class="link">
+                    Texto
+                </p>
+              </div>
+            </div>
+            <div
+              class="card mx-3"
+              style="width: 18rem; border: 1px solid black"
+            >
+              <div class="card-body bg-2">
+                <p class="link">Título</p>
+                <i class="link my-2" data-feather="coffee"></i>
+                <p class="link">
+                  Texto
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="contato" class="row bg-hd">
+        <div
+          class="d-flex text-center justify-content-evenly col-md-11 mx-3 my-2"
+        >
+          <div
+            class="col-md-3 col-5 col-sm-5 bg-hd d-flex justify-content-start"
+          >
+            <div style="font-size: 1.3rem" class="whatss d-flex my-3 font-b">
+              <i class="bi bi-whatsapp link mx-3 my-1"></i>
+              <p class="link">(99)9999-9999</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 col-sm-6 d-flex">
+            <p style="font-size: 1.3rem" class="link mx-3 my-3 font-b">
+              <i class="link my-2 mx-3" data-feather="map-pin"></i> Av Pizza N°0
+              Bairro Peperonni
+            </p>
+          </div>
+        </div>
+        <div class="row bg-hd link">
+          <div class="col-md-12 my-3">
+            <div
+              style="background-color: black; width: 100%; height: 1px"
+            ></div>
+          </div>
+          <div class="col-md-6 col-10 col-sm-10 d-flex mx-5">
+            <p class="mx-2">© 2023 Paulo Sarmanho. All rights reserved.</p>
+            <a href="https://github.com/PauloSarmanhoDev"
+              ><i class="link mx-2" data-feather="github"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/paulo-de-tarso-sarmanho/"
+              ><i class="link mx-2" data-feather="linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
